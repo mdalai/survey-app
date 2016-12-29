@@ -1,0 +1,112 @@
+
+
+<div class="jumbotron" ng-show="successInfo">
+        <h3>Thank you for your feedback!!</h3>
+        <br><br>
+        <br>
+        <p>Go to Lange Medical website click 
+        <a href = "http://www.langemed.com"> >> here << </a>.
+        </p>
+</div>
+
+
+<!-- survey detail modal dialog -->
+<div id="survey" tabindex="-1" role="dialogNO" aria-labelledby="survey" aria-hidden="true" ng-show="surveyInfo">
+    <div class="modal-dialogNO">
+        <div class="modal-contentNO">
+            
+            <div class="modal-header">
+                <h4 class="modal-title">Survey Questions</h4>
+            </div>
+            
+            <div class="modal-body">
+                
+                <!-- input box -->
+                <!--<div class="form-group info-input">
+                    <label>Email</label>
+                    <input type="text" class="form-control" name="email" ng-model="formData.email" required>
+                </div> -->
+
+
+                <!-- SURVEY -->
+
+                <!--radio buttons -->
+                <div>
+                    <label>1. On a scale of 1 to 10 with 10 being highest, how do you feel about the product quality?</label>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label> <input type="radio" name="rate1" value="1" ng-model="formData.rate1"> 1 </label>
+                            <label> <input type="radio" name="rate1" value="2" ng-model="formData.rate1"> 2 </label>
+                            <label> <input type="radio" name="rate1" value="3" ng-model="formData.rate1"> 3 </label>
+                            <label> <input type="radio" name="rate1" value="4" ng-model="formData.rate1"> 4 </label>
+                            <label> <input type="radio" name="rate1" value="5" ng-model="formData.rate1"> 5 </label>
+                            <label> <input type="radio" name="rate1" value="6" ng-model="formData.rate1"> 6 </label>
+                            <label> <input type="radio" name="rate1" value="7" ng-model="formData.rate1"> 7 </label>
+                            <label> <input type="radio" name="rate1" value="8" ng-model="formData.rate1"> 8 </label>
+                            <label> <input type="radio" name="rate1" value="9" ng-model="formData.rate1"> 9 </label>
+                            <label> <input type="radio" name="rate1" value="10" ng-model="formData.rate1"> 10 </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <label>2. On a scale of 1 to 10 with 10 being highest, how do you feel about the service from Lange Medical?</label>
+                    <div class="form-group">
+                        <div class="radio">
+                            <label> <input type="radio" name="rate2" value="1" ng-model="formData.rate2"> 1 </label>
+                            <label> <input type="radio" name="rate2" value="2" ng-model="formData.rate2"> 2 </label>
+                            <label> <input type="radio" name="rate2" value="3" ng-model="formData.rate2"> 3 </label>
+                            <label> <input type="radio" name="rate2" value="4" ng-model="formData.rate2"> 4 </label>
+                            <label> <input type="radio" name="rate2" value="5" ng-model="formData.rate2"> 5 </label>
+                            <label> <input type="radio" name="rate2" value="6" ng-model="formData.rate2"> 6 </label>
+                            <label> <input type="radio" name="rate2" value="7" ng-model="formData.rate2"> 7 </label>
+                            <label> <input type="radio" name="rate2" value="8" ng-model="formData.rate2"> 8 </label>
+                            <label> <input type="radio" name="rate2" value="9" ng-model="formData.rate2"> 9 </label>
+                            <label> <input type="radio" name="rate2" value="10" ng-model="formData.rate2"> 10 </label>
+                        </div>
+
+                    </div>
+                </div>
+
+                
+
+                <!-- multiSelect checkboxes -->
+                <!--<label>What is your Favorite Colors (MultiSelect Checkboxes)</label>
+                <div class="form-group">
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="favoriteColors" ng-model="formData.colors.red"> Red
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="favoriteColors" ng-model="formData.colors.blue"> Blue
+                    </label>
+                    <label class="checkbox-inline">
+                        <input type="checkbox" name="favoriteColors" ng-model="formData.colors.green"> Green
+                    </label>
+                </div>  -->
+
+
+                <!-- textarea -->
+                <div>
+                    <label>3. Please list anything we can do to improve in these areas</label>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="2" ng-model="formData.comment"></textarea>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" id="addButton"
+                        data-loading-text="Sending..." ng-click="addSurvey()">
+                        Submit responses
+                    </button>
+                <!--<button type="button" class="btn btn-default" data-dismiss="modal">
+                    Close
+                </button> -->
+            </div>
+            
+        </div><!-- /.modal-contentNO -->
+    </div><!-- /.modal-dialogNO -->
+</div><!-- /.modalNO -->
